@@ -13,7 +13,12 @@ angular.module('mixitApp')
       modal.modal('show');
     }
 
+    $scope.clear = function() {
+      $scope.framework={};
+    }
+
     $scope.save = function() {
+      $scope.framework.id="-";
       if($scope.framework.$save) {
         $scope.framework.$save();
       } else {
