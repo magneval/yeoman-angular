@@ -12,7 +12,7 @@ angular.module('mixitApp', ['ngResource'])
       });
   })
   .factory('Frameworks', function($resource) {
-    return $resource('http://localhost\\:1234/frameworks/:id', {
+    return $resource('http://localhost\\:8080/frameworks/:id', {
       id: '@_id'
     });
   });
