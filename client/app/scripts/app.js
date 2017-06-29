@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('mixitApp', ['ngResource'])
+angular.module('mixitApp', ['ngResource','ngRoute'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
