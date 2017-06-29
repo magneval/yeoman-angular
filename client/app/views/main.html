@@ -14,7 +14,7 @@
   <tbody>
     <tr ng-repeat="framework in frameworks" ng-click="edit(framework)">
       <td>{{framework.name}}</td>
-      <td>{{framework.url}}</td>
+      <td><a ng-href="{{framework.url}}">{{framework.url}}</a></td>
       <td><button class="btn btn-danger" ng-click="delete(framework, $index, $event)">Delete</button></td>
     </tr>
   </tbody>
